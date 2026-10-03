@@ -4,7 +4,8 @@
   "description": "Esse projeto é a versão final dos teste para envio, sendo um projeto foca em testar o testes do Ts e os comandos do Ts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "dev": "tsx src/index.ts"
   },
   "repository": {
     "type": "git",
