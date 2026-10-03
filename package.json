@@ -1,0 +1,27 @@
+{
+  "name": "projeto_n1_entrega",
+  "version": "1.0.0",
+  "description": "Esse projeto é a versão final dos teste para envio, sendo um projeto foca em testar o testes do Ts e os comandos do Ts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanluzlima-cmd/Projeto_N1_Entrega.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ryanluzlima-cmd/Projeto_N1_Entrega/issues"
+  },
+  "homepage": "https://github.com/ryanluzlima-cmd/Projeto_N1_Entrega#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
