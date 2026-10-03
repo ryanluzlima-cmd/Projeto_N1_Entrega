@@ -11,6 +11,6 @@ Comandos para instalar, rodar e testar o projeto
 5. npm i -D @types/node;
 6. npx tsc --init;
 7. npx tsc;
-8. npx vitest run "";
-9.dir
-10.cd ""
+8. npx vitest run;
+9.dir;
+10.cd;

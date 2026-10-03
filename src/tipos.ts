@@ -1,15 +1,15 @@
-export type categ = "alimentação" | "transporte" | "moradia" | "lazer";
+export type categoria = "alimentação" | "transporte" | "moradia" | "lazer";
 
 export interface Despesa {
   id: number;
   descricao: string;
   valor: number;
-  categoria: categ;
+  categoria: categoria;
   mes: number;
   observacao?: string;
 }
 
-export const CATEGORIAS: categ[] = [
+export const CATEGORIAS: categoria[] = [
   "alimentação",
   "transporte",
   "moradia",
