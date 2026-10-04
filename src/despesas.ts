@@ -11,22 +11,28 @@ export function removerDespesa(
   despesas: Despesa[],
   id: number
 ): Despesa[] {
-  throw new Error("não implementado");
+  return despesas.filter(despesa => despesa.id !== id);
 }
 
 export function despesasDaCategoria(
   despesas: Despesa[],
   categoria: categoria
 ): Despesa[] {
-  throw new Error("não implementado");
+  return despesas.filter(despesa => despesa.categoria === categoria);
 }
 
 export function totalGasto(despesas: Despesa[]): number {
-  throw new Error("não implementado");
+  return despesas.reduce((total, despesa) => total + despesa.valor, 0);
 }
 
 export function maiorDespesa(
   despesas: Despesa[]
 ): Despesa | undefined {
-  throw new Error("não implementado");
+  if (despesas.length === 0) {
+    return undefined;
+  }
+
+  return despesas.reduce((maior, despesa) =>
+    despesa.valor > maior.valor ? despesa : maior
+  );
 }
