@@ -17,7 +17,7 @@ describe("matrizCategoriaMes", () => {
     const resultado = matrizCategoriaMes(despesas);
 
     expect(resultado.length).toBe(4);
-    expect(resultado.length).toBe(12);
+    expect(resultado[0]!.length).toBe(12);
   });
 });
 
