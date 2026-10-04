@@ -4,7 +4,7 @@ export function adicionarDespesa(
   despesas: Despesa[],
   nova: Despesa
 ): Despesa[] {
-  throw new Error("não implementadoiu");
+  return [...despesas, nova];
 }
 
 export function removerDespesa(
