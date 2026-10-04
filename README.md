@@ -14,3 +14,5 @@ Comandos para instalar, rodar e testar o projeto
 8. npx vitest run;
 9.dir;
 10.cd;
+11.npm run dev;
+12.npx tsx src/index.ts;
