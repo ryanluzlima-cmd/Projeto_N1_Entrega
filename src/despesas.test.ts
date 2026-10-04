@@ -1,10 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { adicionarDespesa,removerDespesa, despesasDaCategoria, totalGasto, maiorDespesa } from "./despesas.js";
+import { adicionarDespesa,removerDespesa, despesasDaCategoria, totalGasto, maiorDespesa } from "./despesas.js"; //IMPORTANTO FUNCTION
 import type { Despesa } from "./tipos.js";
+import { matrizCategoriaMes } from "./relatorio.js";
 
 describe("adicionarDespesa", () => {
   it("deve adicionar uma despesa", () => {
-    const despesas: Despesa[] = [];
+    const despesas: Despesa[] = [];  //Isso significa que é vazio essa array
 
     const nova: Despesa = {
       id: 1,
@@ -16,7 +17,7 @@ describe("adicionarDespesa", () => {
 
     const resultado = adicionarDespesa(despesas, nova);
 
-    expect(resultado).toEqual([nova]);
+    expect(resultado).toEqual([nova]); //EXPCT = Resultado esperado
   });
 });
 
