@@ -4,18 +4,19 @@ Esse projeto é a versão final dos teste para envio, sendo um projeto foca em t
 ## Controle de gastos do Mês
 
 ## Comandos para instalar, rodar e testar o projeto
-1. npm init -y;                                       / npm install - para instalar as pastas
-2. npm i -D typescript;                               / npm test - para executar os testes
-3. npm i -D tsx;                                      / npm run dev - para executar o programa
-4. npm i -D vitest;
-5. npm i -D @types/node;
-6. npx tsc --init;
-7. npx tsc;
-8. npx vitest run;
-9.dir;
-10.cd;
-11.npm run dev;
-12.npx tsx src/index.ts;
+1.
+1- npm init -y;                                       / npm install - para instalar as pastas
+2- npm i -D typescript;                               / npm test - para executar os testes
+3- npm i -D tsx;                                      / npm run dev - para executar o programa
+4- npm i -D vitest;
+5- npm i -D @types/node;
+6- npx tsc --init;
+7- npx tsc;
+8- npx vitest run;
+9- dir;
+10- cd;
+11- npm run dev;
+12- npx tsx src/index.ts;
 
 2. Arquivos de Configuração
  -package.json: contém as informações do projeto, dependências e scripts utilizados.
