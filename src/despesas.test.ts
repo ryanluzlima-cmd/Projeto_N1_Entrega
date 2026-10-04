@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { adicionarDespesa } from "./despesas.js";
+import { adicionarDespesa,removerDespesa, despesasDaCategoria, totalGasto, maiorDespesa } from "./despesas.js";
 import type { Despesa } from "./tipos.js";
 
 describe("adicionarDespesa", () => {
@@ -17,5 +17,90 @@ describe("adicionarDespesa", () => {
     const resultado = adicionarDespesa(despesas, nova);
 
     expect(resultado).toEqual([nova]);
+  });
+});
+
+describe("removerDespesa", () => {
+  it("deve remover uma despesa", () => {
+    const despesas: Despesa[] = [
+      {
+        id: 1,
+        descricao: "Almoço",
+        valor: 30,
+        categoria: "alimentação",
+        mes: 1
+      }
+    ];
+
+    const resultado = removerDespesa(despesas, 1);
+
+    expect(resultado).toEqual([]);
+  });
+});
+
+
+describe("despesasDaCategoria", () => {
+  it("deve encontrar despesas da categoria", () => {
+    const despesas: Despesa[] = [
+      {
+        id: 1,
+        descricao: "Almoço",
+        valor: 30,
+        categoria: "alimentação",
+        mes: 1
+      }
+    ];
+
+    const resultado = despesasDaCategoria(despesas, "alimentação");
+
+    expect(resultado).toEqual(despesas);
+  });
+});
+
+
+describe("totalGasto", () => {
+  it("deve somar as despesas", () => {
+    const despesas: Despesa[] = [
+      {
+        id: 1,
+        descricao: "Almoço",
+        valor: 30,
+        categoria: "alimentação",
+        mes: 1
+      },
+      {
+        id: 2,
+        descricao: "Cinema",
+        valor: 20,
+        categoria: "lazer",
+        mes: 2
+      }
+    ];
+
+    expect(totalGasto(despesas)).toBe(50);
+  });
+});
+
+
+describe("maiorDespesa", () => {
+  it("deve encontrar a maior despesa", () => {
+    const despesas: Despesa[] = [
+      {
+        id: 1,
+        descricao: "Almoço",
+        valor: 30,
+        categoria: "alimentação",
+        mes: 1
+      },
+      {
+        id: 2,
+        descricao: "Aluguel",
+        valor: 800,
+        categoria: "moradia",
+        mes: 1
+      }
+    ];
+
+    expect(maiorDespesa(despesas)).toEqual(despesas[1]);
   });
 });
